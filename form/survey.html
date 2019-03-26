@@ -1,54 +1,47 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Survey Form</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
   <div id="main">
-<h1 title="title" id="formtitle">Survey Form</h1>
+<h1  id="title">Survey Form</h1>
 
 <div id="form">
-<div id="row">
-  <p title="description" id="formname">Yet Another Survey Form</p>
+<div class="row">
+  <p id="description">Yet Another Survey Form</p>
   </div>
   <form id="survey-form">
     
-  <div id="row">
+  <div class="row">
     <div class="leftpane">
       <label id="name-label">*Name:</label>
     </div>
     <div class="rightpane">
-      <input id="name"/>
+      <input type="text" id="name" class="textfield" required placeholder="Name" />
       </div>
     </div>
-  <div id="row">
+  <div class="row">
 <div class="leftpane">
     <label id="email-label">*Email:</label>
   </div>
     <div class="rightpane">
-  <input id="email"/>
+  <input type="email" id="email" class="textfield"  required placeholder="Email"/>
     </div>
       </div>
-      <div id="row">
+      <div class="row">
         <div class="leftpane">
-  <label id="number-label">*Number:</label> 
-          </div>
-        
-        <div class="rightpane">
-          <input id="number"/>
-        </div>
-      </div>
-      <div id="row">
-        <div class="leftpane">
-        <label id="age-label">Age:</label>
+        <label id="number-label">Age:</label>
           </div>
         <div class="rightpane">
-        <input id="age"/>
+        <input type="number" id="number" name="age" min="1" max="100"   class="textfield" placeholder="Age"/>
         </div>
       </div>
-      <div id="row">
+      <div class="row">
         <div class="leftpane">
-  <label id="role-label">Current role that describes you : </label>
+  <label id="role-label">Current role : </label>
           </div>
         <div class="rightpane">
   <select id="dropdown">
@@ -59,6 +52,70 @@
     <option value="other">other</option>
   </select>
         </div>
+        <div class="row">
+          <div class="leftpane" id="selection">How likely will you recommend:</div>
+          <div class="rightpane">
+                <div class="selectionoptions">
+        
+            <input type="radio" name="mostly">
+           <label>most likely</label>
+        </div>
+            <div class="selectionoptions">
+        
+            <input type="radio" name="likely">
+         <label>likely </label>
+              </div>
+             <div class="selectionoptions">
+        
+            <input type="radio" name="never">
+           <label>never</label>
+        </div>
+        
+            </div>
+        </div>
+        <div class="row">
+          <div class="leftpane" id="selection">Things to be improved in the future: </div>
+          <div class="rightpane">
+            <div class="checkbox">
+            <input name="fronend" type="checkbox">
+              <label>Front-end Projects</label>
+            </div>
+            <div class="checkbox">
+            <input name="backend" type="checkbox">
+              <label>Back-end Projects</label>
+            </div>
+            <div class="checkbox">
+            <input name="fronend" type="checkbox">
+              <label>Front-end Projects</label>
+            </div>
+            <div class="checkbox">
+            <input name="ml" type="checkbox">
+              <label>Machine Learning</label>
+            </div>
+            <div class="checkbox">
+            <input name="bigData" type="checkbox">
+              <label>Big Data</label>
+            </div>
+            
+            
+          <div class="checkbox">
+            <input name="AI" type="checkbox">
+              <label>AI</label>
+            </div>
+        
+        <div class="checkbox">
+            <input name="cv" type="checkbox">
+              <label>computer vision</label>
+            </div>
+            
+        </div>
+        <div class="row">
+          <div class="leftpane">Any Comments or Suggestions?</div>
+          <div class="rightpane"> <textarea rows="4" cols="50" id="textarea"></textarea> </div>
+        </div>
+        <button id="submit"type="submit">submit</button>
+
+
 </form>
   </div>
   </div>
