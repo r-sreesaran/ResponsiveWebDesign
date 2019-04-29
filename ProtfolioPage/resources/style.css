@@ -8,6 +8,9 @@ html,body {
     height: 100%;
     }
 
+    #navbar {
+        width: 100%
+    }
     ul {
         list-style-type: none;
         margin: 0;
@@ -58,9 +61,42 @@ img#coding {
 }
 
 
+@media  (max-width:400px) {
+    .row {
+        display:flex;
+        flex-direction: column;
+       
+    }  
+ }
+
+.row {
+    display:flex;
+    flex-direction: row;
+
+    
+}
+
+.project-tile {
+    width: 245px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    margin-left: 17%;
+    margin-right:17%;
+    padding: 4px;
+  }
+  .cardContent {
+    padding: 10px;
+  }
+  .cardText {
+    margin-bottom: 30px;
+  }
+  #thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
 
 
-
+/*
 #project-name {
     display:flex;
     background-color: antiquewhite;
@@ -93,3 +129,4 @@ width: 100%;
     
 }
 
+*/
