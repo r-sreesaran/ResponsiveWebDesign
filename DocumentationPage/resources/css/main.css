@@ -3,34 +3,46 @@ html,body {
     width: 100%;
 }
 
+#sidepane {
+  width: 25%;
+  height: 100%;
+  background-color: #f1f1f1;
+  
+}
 
+#navbar {
+  position: fixed;
+}
 
-ul {
+#navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
+    width: 100%;
+   }
   
-  li a {
-    display: block;
+   #navbar li {
+     display:block;
+     overflow: visible;
+    
+   }
+
+   #navbar li a {
     color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+    width: 100%;
+    display: block;
   }
   
-  li a.active {
+  #navbar li a.active {
     background-color: #4CAF50;
     color: white;
+    display: block;
   }
   
-  li a:hover:not(.active) {
+  #navbar li a:hover:not(.active) {
     background-color: #555;
     color: white;
+    display: block;
   }
 
   #Nav-Header {
@@ -43,12 +55,11 @@ ul {
       width: 100%;
   }
 
-  #sidepane {
-     width: 25%;
-     height: 100%;
-  }
+  
 
   #mainpane {
+      padding-left: 10px;
+      padding-top: 35px;
 width: 75%;
 height: 100%;
   }
