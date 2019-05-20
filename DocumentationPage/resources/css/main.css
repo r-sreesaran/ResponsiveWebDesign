@@ -4,7 +4,7 @@ html,body {
 }
 
 #sidepane {
-  width: 25%;
+  width: 15%;
   height: 100%;
   background-color: #f1f1f1;
   
@@ -22,21 +22,21 @@ html,body {
    }
   
    #navbar li {
-     display:block;
      overflow: visible;
-    
+     width: 100%;
+    margin-bottom: 2ex;
+    margin-top: 2ex;
+
    }
 
    #navbar li a {
     color: #000;
     width: 100%;
-    display: block;
   }
   
   #navbar li a.active {
     background-color: #4CAF50;
     color: white;
-    display: block;
   }
   
   #navbar li a:hover:not(.active) {
