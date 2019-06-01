@@ -1,0 +1,27 @@
+#header {
+    display:flex
+}
+
+#nav-bar {
+    margin-top: 10px;
+    margin-left: 30px;  
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+#image {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+nav>ul {
+    display: flex;
+    list-style:none;
+    
+}
+
+li {
+    margin: 0px 20px 0px 20px; 
+}
